@@ -4,6 +4,7 @@ module.exports = {
     es6: true,
     node: true
   },
+  parser: "babel-eslint",
   extends: ["airbnb"],
   globals: {
     Atomics: "readonly",
@@ -18,6 +19,14 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
-    "react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off",
+    "no-shadow": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "class-methods-use-this": "off",
+    "react/no-access-state-in-setstate": "off",
+    "no-param-reassign": "off"
   }
 };
